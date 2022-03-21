@@ -1,0 +1,249 @@
+@font-face {
+  font-family: SharpSansDispNo1;
+  src: url(font/SharpSansDispNo1-Medium.otf);
+}
+
+/* Comman-css-start*/
+body {
+            background: #F8F6FF;
+			font-family: SharpSansDispNo1;
+        }
+.container {
+    max-width: 1440px;
+	padding: 24px;
+}
+a.dropdown-item:hover path {
+    
+    stroke: #5E27DA;
+}
+.space-left {
+    padding-right: 10px !important;
+}
+.space-right {
+    padding-left: 10px !important;
+}
+.space-main {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.timeline {
+    list-style: none;
+}
+.card{
+	border: 0!important;
+}
+.font-16{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.grey-color{
+	color: #2D2D2D;
+}
+.fa-angle-down:before {
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+}
+.fa-calendar-o:before {
+    font-size: 20px;
+}
+/* Comman-css-end*/
+
+/* right-menu-start */
+.right-menu li{
+	padding: 18px 26px;
+}
+.right-menu span{
+	padding-left: 26px;
+    vertical-align: bottom;;
+}
+.right-menu .dropdown-item.active, .dropdown-item:active{
+	background: #fff;
+	color: #000;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+    background: #fff;
+	color: #5E27DA;
+}
+
+/* right-menu-end */
+
+/* left-menu-start */
+.left-menu{
+	padding: 29px 48px;
+}
+.cont-hed{
+	font-weight: 600;
+    font-size: 20px;
+    color: #959595 !important;
+	margin: 0;
+}
+/* left-menu-end */
+
+/* center-menu-end */
+.recent-sec p, span {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.recent-sec span {
+   color: #959595;
+}
+.recent-head {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.contact-padding {
+    padding-top: 26px;
+}
+/* center-menu-end */
+
+/* .top-sec{
+	display: flex;
+	gap: 16px;
+}*/
+
+.gapfor_pro_q{
+	gap:24px;
+}
+.profile_logo{
+	min-width:150px;
+	max-width:150px;
+	width:100%;
+	padding:0px;
+	
+}
+.profile_logo img{
+	width:100%;
+}
+.top-sec h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #131313;
+}
+.top-sec span {
+    color: #959595;
+}
+.top-sec .btn{
+	background: #5E27DA;
+    border: #5E27DA;
+    font-size: 14px;
+    padding: 16px 56px 16px 56px;
+	border-radius: 8px;
+}
+.active-sec h5 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #2D2D2D;
+    margin-bottom: 16px;
+    margin-top: 18px;
+}
+.active-sec span{
+	color: #04d833;
+    font-weight: 600;
+}
+.gedf-card {
+    margin-top: 4em;
+}
+.qr-code-sec{
+	text-align: right;
+    padding-right: 0;
+}
+.navbar-toggler {
+    padding: 0.2rem 0.4rem;
+font-size: .80rem;
+}
+@media (min-width: 1436px){
+	.gedf-wrapper .space-left{
+		-ms-flex: 0 0 289px;
+		flex: 0 0 289px;
+		max-width: 289px;
+	}
+	.gedf-wrapper .space-main {
+		-ms-flex: 0 0 710px;
+		flex: 0 0 710px;
+		max-width: 710px;
+	}
+	.gedf-wrapper .space-right {
+		-ms-flex: 0 0 353px;
+		flex: 0 0 353px;
+		max-width: 353px;
+	}
+		
+}
+@media only screen and (min-device-width: 1300px) and (max-device-width: 1370px){
+   .top-sec .btn{
+	   padding: 14px 35px 13px 35px;
+   }
+    }
+	@media only screen and (min-device-width: 1200px) and (max-device-width: 1300px){
+   .top-sec .btn{
+	   padding: 14px 14px 12px 14px;
+   }
+    }
+@media only screen and (min-device-width: 992px) and (max-device-width: 1200px){
+     .sticy-menu{
+	position: -webkit-sticky;
+    position: sticky;
+	top: 0;
+    height: calc(100vh - 20px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+	 }
+	 .sticky-menu-end{
+		 justify-content: end!important;
+	 }
+    }
+	@media only screen and (min-device-width: 319px) and (max-device-width: 767px){
+     .top-sec .btn{
+		 padding: 16px 25px 16px 25px;
+	 }
+    }
+	@media (max-width: 1200px){
+.gedf-card {
+    margin-top: 2em;
+}
+}
+@media (min-width: 992px){
+.collapse:not(.show) {
+    display: block;
+}
+}
+@media (max-width: 992px){
+.nav-img-btm {
+    display: none;
+}
+}
+@media (max-width: 667px){
+     .profile-sec{
+		 flex-direction: column;
+		 padding: 20px;
+	 }
+    }
+	@media (max-width: 540px){
+     .qr-sec{
+		 flex-direction: column;
+	 }
+	 .qr-code-sec{
+		 text-align: center;
+    padding-bottom: 20px;
+	padding-right: 10px;
+	 }
+	 .profile-sec{
+		 text-align: center;
+	 }
+	 .profile_logo {
+	margin-left: auto;
+    margin-right: auto;
+	 }
+	 .active-sec {
+    text-align: center;
+}
+.navbar img {
+    width: 218px;
+}
+    }
