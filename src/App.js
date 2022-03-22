@@ -11,7 +11,7 @@ function App() {
     <>
       <Router>
         <div className='App'>
-        <Routing />
+          <Routing />
         </div>
       </Router>
       <ToastContainer />

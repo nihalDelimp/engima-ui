@@ -6,9 +6,7 @@ const PrivateLayout = ({ children }) => {
         <div className="container gedf-wrapper" >
             <div className="row justify-content-center sticky-menu-end" >
             <Sidebar />
-            <div >
-                {children}
-            </div>
+            {children}
         </div>
         </div>
     )

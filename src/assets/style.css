@@ -1,6 +1,6 @@
 @font-face {
   font-family: SharpSansDispNo1;
-  src: url(font/SharpSansDispNo1-Medium.otf);
+  src: url('./font/SharpSansDispNo1-Medium.otf');
 }
 
 /* Comman-css-start*/
