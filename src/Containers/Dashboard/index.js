@@ -3,11 +3,9 @@ import Contacts from "../Contacts"
 import { useSelector } from "react-redux"
 import QrCodeImg from "../../assets/img/Frame-834.png"
 import profileImg from "../../assets/img/Ellipse 22.png"
-
+import contImg2 from "../../assets/img/Ellipse-1.png"
 const Dashboard = () => {
     const { qr_code, user } = useSelector(state => state.auth)
-
-
 
     return (
         <>
@@ -59,7 +57,7 @@ const Dashboard = () => {
                                         <td style={{ border: "0" }}>
                                             <div className="media recent-sec">
 
-                                                <img src="img/Ellipse (1).png" className="media-photo" />
+                                                <img src={contImg2} className="media-photo" />
 
                                                 <div className="media-body font-16">
                                                     <span className="media-meta pull-right">Last week</span>
@@ -75,7 +73,7 @@ const Dashboard = () => {
                                         <td style={{ border: "0" }}>
                                             <div className="media recent-sec font-16">
 
-                                                <img src="img/Ellipse (1).png" className="media-photo" />
+                                                <img src={contImg2} className="media-photo" />
 
                                                 <div className="media-body">
                                                     <span className="media-meta pull-right">Last week</span>
@@ -91,7 +89,7 @@ const Dashboard = () => {
                                         <td style={{ border: "0" }}>
                                             <div className="media recent-sec font-16">
 
-                                                <img src="img/Ellipse (1).png" className="media-photo" />
+                                                <img src={contImg2} className="media-photo" />
 
                                                 <div className="media-body">
                                                     <span className="media-meta pull-right">Last week</span>
@@ -107,7 +105,7 @@ const Dashboard = () => {
                                         <td style={{ border: "0" }}>
                                             <div className="media recent-sec font-16">
 
-                                                <img src="img/Ellipse (1).png" className="media-photo" />
+                                                <img src={contImg2} className="media-photo" />
 
                                                 <div className="media-body">
                                                     <span className="media-meta pull-right">Last week</span>
@@ -123,7 +121,7 @@ const Dashboard = () => {
                                         <td style={{ border: "0" }}>
                                             <div className="media recent-sec font-16">
 
-                                                <img src="img/Ellipse (1).png" className="media-photo" />
+                                                <img src={contImg2} className="media-photo" />
 
                                                 <div className="media-body">
                                                     <span className="media-meta pull-right">Last week</span>

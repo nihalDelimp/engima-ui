@@ -1,6 +1,6 @@
 import React from "react";
 import contImg from "../../assets/img/Ellipse.png"
-import contImg2 from "../../assets/img/Ellipse (1).png"
+import contImg2 from "../../assets/img/Ellipse-1.png"
 import contImg3 from "../../assets/img/Ellipse4.png"
 import contImg4 from "../../assets/img/Ellipse (2).png"
 
