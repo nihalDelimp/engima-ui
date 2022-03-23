@@ -6,8 +6,6 @@ const AppRoute = ({
     layout: Layout,
     ...rest }) => {
     return (
-        <div className="auth-wrapper">
-        <div className="auth-inner">
         <Route
             {...rest}
             render={(props) => (
@@ -16,8 +14,6 @@ const AppRoute = ({
                 </Layout>
             )}
         />
-         </div>
-        </div>
     )
 }
 

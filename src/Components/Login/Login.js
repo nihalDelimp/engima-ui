@@ -12,7 +12,8 @@ const Login = (props) => {
   const history = useHistory()
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   return (
-    <div>
+    <div className="auth-wrapper">
+    <div className="auth-inner">
       <h3>Enigma</h3>
       <Formik
         initialValues={{ email: '', password: '' }}
@@ -89,6 +90,7 @@ const Login = (props) => {
           </form>
         )}
       </Formik>
+    </div>
     </div>
   )
 }

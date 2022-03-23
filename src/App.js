@@ -6,13 +6,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/style.css'
 
+
 function App() {
   return (
     <>
       <Router>
-        <div className='App'>
-          <Routing />
-        </div>
+        <Routing />
       </Router>
       <ToastContainer />
     </>

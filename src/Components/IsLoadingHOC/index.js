@@ -16,7 +16,7 @@ const Loading = props => {
   );
 };
 
-export const IsLoadingHOC = ( WrappedComponent, loadingMessage ) => {
+ const IsLoadingHOC = ( WrappedComponent, loadingMessage ) => {
   function HOC ( props ) {
     const [isLoading, setLoading] = useState( false );
 

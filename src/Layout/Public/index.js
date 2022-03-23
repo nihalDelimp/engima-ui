@@ -1,7 +1,7 @@
 const PublicLayout = ({ children }) => {
 
     return (
-        <div>{children}</div>
+        <div className="App" >{children}</div>
     )
 }
 

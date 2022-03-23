@@ -5,8 +5,8 @@
 
 /* Comman-css-start*/
 body {
-            background: #F8F6FF;
-			font-family: SharpSansDispNo1;
+background: #e2deecea;
+font-family: SharpSansDispNo1;
         }
 .container {
     max-width: 1440px;
@@ -151,6 +151,11 @@ a.dropdown-item:hover path {
 .qr-code-sec{
 	text-align: right;
     padding-right: 0;
+}
+.qr-code-sec img{
+    width: 100%;
+    border-left: 15px solid #F8F6FF;
+    background: #F8F6FF;
 }
 .navbar-toggler {
     padding: 0.2rem 0.4rem;
