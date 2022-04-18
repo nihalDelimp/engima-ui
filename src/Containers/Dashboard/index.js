@@ -3,23 +3,12 @@ import Contacts from "../Contacts"
 import { useSelector } from "react-redux"
 import IsloggedinHOC from '../../Components/IsLoggedinHOC'
 import IsLoadingHOC from '../../Components/IsLoadingHOC'
-import QrCodeImg from "../../assets/img/Frame-834.png"
 import profileImg from "../../assets/img/Ellipse 22.png"
-import listImg from "../../assets/img/Ellipse-1.png"
-import { io } from "socket.io-client"
+import listImg from "../../assets/img/Ellipse-1.png";
 
 const Dashboard = (props) => {
     const { setLoading } = props
     const { qr_code, user } = useSelector(state => state.auth)
-    const socket = useRef();
-    socket.current = io("https://enigm.delimp.world/");
-    const authId = useSelector(state => state.auth.user.id);
-
-    useEffect(() => {
-        console.log("Nihal ,authhhh", socket)
-        console.log(socket)
-        socket.current.emit("add-user", authId);
-    }, [authId]);
     return (
         <>
             <div className="col-xl-6 col-lg-9 space-main p-0">
