@@ -19,8 +19,11 @@ const Dashboard = (props) => {
                     <div className="d-flex justify-content-between align-items-center qr-sec">
                         <div className="col-lg-8 d-flex gapfor_pro_q profile-sec" >
                             <div className="profile_logo">
-                                {/* <img src = {`${process.env.REACT_APP_BASEURL}/${user.profile_picture}`}/> */}
-                                <img src={profileImg} />
+                                <div className="profile--logo--img">
+                                    <img src={`${process.env.REACT_APP_IMAGE_PATH}profile_image/${user.profile_picture}`} alt="Profile Image" />
+                                </div>
+
+
                             </div>
                             <div className="">
                                 <h3>{user.username}</h3>
@@ -43,101 +46,19 @@ const Dashboard = (props) => {
                                 </div>
                             </div>
                             <div>
-                                <div className="dropdown">
+                                {/* <div className="dropdown">
                                     <div className="ml-2">
                                         <div className="p m-0 font-16 grey-color"><i className="fa fa-calendar-o pr-2" aria-hidden="true"></i>01 September - Today<i className="fa fa-angle-down pl-2" aria-hidden="true"></i>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
-                    <div className="card border-0">
-                        <div className="card-body">
-                            <table className="table">
-                                <tbody>
-                                    <tr data-status="pagado">
-                                        <td style={{ border: "0" }}>
-                                            <div className="media recent-sec">
-
-                                                <img src={listImg} className="media-photo" />
-
-                                                <div className="media-body font-16">
-                                                    <span className="media-meta pull-right">Last week</span>
-                                                    <p className="summary pl-3 grey-color">You update profile picture</p>
-
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr data-status="pagado">
-
-                                        <td style={{ border: "0" }}>
-                                            <div className="media recent-sec font-16">
-
-                                                <img src={listImg} className="media-photo" />
-
-                                                <div className="media-body">
-                                                    <span className="media-meta pull-right">Last week</span>
-                                                    <p className="summary pl-3 grey-color">You update profile picture</p>
-
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr data-status="pagado">
-
-                                        <td style={{ border: "0" }}>
-                                            <div className="media recent-sec font-16">
-
-                                                <img src={listImg} className="media-photo" />
-
-                                                <div className="media-body">
-                                                    <span className="media-meta pull-right">Last week</span>
-                                                    <p className="summary pl-3 grey-color">You update profile picture</p>
-
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr data-status="pagado">
-
-                                        <td style={{ border: "0" }}>
-                                            <div className="media recent-sec font-16">
-
-                                                <img src={listImg} className="media-photo" />
-
-                                                <div className="media-body">
-                                                    <span className="media-meta pull-right">Last week</span>
-                                                    <p className="summary pl-3 grey-color">You update profile picture</p>
-
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr data-status="pagado">
-
-                                        <td style={{ border: "0" }}>
-                                            <div className="media recent-sec font-16">
-
-                                                <img src={listImg} className="media-photo" />
-
-                                                <div className="media-body">
-                                                    <span className="media-meta pull-right">Last week</span>
-                                                    <p className="summary pl-3 grey-color">You update profile picture</p>
-
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    <div className="coming--soon--text p-4 text-center">
+                        <h1>Coming Soon!</h1>
                     </div>
+
                 </div>
             </div>
             <Contacts />
