@@ -20,7 +20,7 @@ const Dashboard = (props) => {
                         <div className="col-lg-8 d-flex gapfor_pro_q profile-sec" >
                             <div className="profile_logo">
                                 <div className="profile--logo--img">
-                                    <img src={`${process.env.REACT_APP_IMAGE_PATH}profile_image/${user.profile_picture}`} alt="Profile Image" />
+                                    <img src={`${process.env.REACT_APP_IMAGE_PATH}profile_image/${user?.profile_picture}`} alt="Profile Image" />
                                 </div>
 
 

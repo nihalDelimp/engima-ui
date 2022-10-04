@@ -66,15 +66,15 @@ const Contacts = () => {
                     <h5 className="card-title cont-hed text-muted">Contacts</h5>
                     {contacts.map((item, key) => (
 
-                        <div className="d-flex justify-content-between align-items-center contact-padding" onClick={() => routeChange(item.user[0]._id, item.user[0].username)} key={key}>
+                        <div className="d-flex justify-content-between align-items-center contact-padding" onClick={() => routeChange(item?.user[0]?._id, item?.user[0]?.username)} key={key}>
                             {/* <div className="d-flex justify-content-between align-items-center contact-padding" key={key}> */}
                             <div className="d-flex justify-content-between align-items-center">
                                 <div className="mr-2">
-                                    <img className="contact-circle" width="50" src={'https://d3nha4rqhtm0ac.cloudfront.net/profile_image/' + item.user[0].profile_picture} alt="" />
+                                    <img className="contact-circle" width="50" src={`${process.env.REACT_APP_IMAGE_PATH}profile_image/${item?.user[0]?.profile_picture}`} alt="" />
                                 </div>
 
                                 <div className="ml-2" key={key}>
-                                    <div className="h7 font-16">{item.user[0].username}</div>
+                                    <div className="h7 font-16">{item?.user[0]?.username}</div>
                                     {/* <div className="h7 font-16">{item.isActive === false ? "OFFLINE" : "ONLINE"}</div> */}
                                 </div>
 
